@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section .section-header {  
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.section .section-header h2{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-list .item {
+    width: calc((100% - 30px) / 4);
+}
+
+.product-list .item .thumbnail {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-list .item .thumbnail .label-wrapper{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.product-list .label-wrapper .label{
+    display: block;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 40px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+}
+
+.product-list .label-wrapper .label-discount{
+    background-color: #f80;
+}
+
+
+.product-list .item .thumbnail img{
+    width: 100%; 
+    height: auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <div class="section-header">
+                <h2>Best Products</h2>
+            </div>
+            <div class="product-list">
+                <div class="item">
+                    <div class="thumbnail">
+                        <div class="label-wrapper">
+                            <span class="label">HOT</span>
+                            <span class="label label-discount">20%</span>
+                        </div>
+                        <img class="product-img" src="https://www.phukiensamsung.com/Uploads/bo-sac-galaxy-j7-pro-chinh-hang.jpg" alt="">
+                        <div class="offer-endday">
+                            Offer end in 00-00-00
+                        </div>
+                    </div>
+                    <div class="category-wrapper">
+                        <span class="category-name">Category</span>
+                        <span><i class="fa fa-heart"></i></span>
+                    </div>
+                    <h3 class="product-name">OPPPO A98 5G</h3>
+                    <div class="product-price">
+                        <strong>8.690.000</strong>
+                        <del>9.290.000</del>
+                    </div>
+                </div>   
+        </section>
+    </div>
+</body>
+</html>

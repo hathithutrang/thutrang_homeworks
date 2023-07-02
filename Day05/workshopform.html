@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding-left: 5px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* max-width: 1200px; */
+            margin: 0 auto;
+        }
+        form>div{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Bình luận- đánh giá bài viết</h3>
+    <p>chọn đánh giá của bạn <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i><i
+            class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+    <div class="container">
+        <form action="" method="get" name="form-comment">
+            <div>
+                <label for="nhập đánh giá"></label>
+                <textarea name="nhập đánh giá" id="nhập đánh giá" cols="30" rows="10" placeholder="Nhập đánh giá về dịch vụ"></textarea>
+            </div>
+            <div>
+                <label for="nhập tên"></label>
+                <input required type="text" name="tên" id="nhập tên" placeholder="Tên(Bắt Buộc)">
+
+                <label for="nhập email"></label>
+                <input  type="email" name="email" id="nhập email" placeholder="Email">
+
+                <label for="nhập tên"></label>
+                <input  type="text" name="tên" id="nhập tên" placeholder="Tên(Bắt Buộc)">
+
+            </div>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

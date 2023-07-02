@@ -1,0 +1,12 @@
+h1{
+    font-weight: bold;
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 50px;
+
+}
+li{
+    font-size: 14px;
+    color: #333;
+    line-height: normal;
+}

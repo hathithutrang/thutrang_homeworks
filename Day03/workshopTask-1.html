@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    a{
+        color: black;
+    }
+    a:hover{
+        color: #06f;
+    }
+    p:first-child  {
+        color: blue ;
+    }
+    ul>li{
+        font-size: 14px;
+        color: #333;
+        line-height: 50px;
+    }
+    ul>li:nth-child(4){
+        color: red;
+    }
+    ul>li:first-child{
+        color: blue;
+    }
+    ul>li:last-child{
+        color:red;
+    }
+    ul>li:nth-child(2n+2){
+        background-color: #f80  ;
+    }
+</style>
+<body>
+    <h1>Vận dụng kiến thức selector CSS đã học Session 3</h1>
+    <a href="https://www.facebook.com/thaygihong/">fb</a>
+    <ul>
+        <li>Tiêu đề in đậm, font size 32px, màu đen #111 cách danh sách bên dưới 1 khoảng 50px</li>
+        <li>Nội dung các dòng: font size 14px, màu đen #333</li>
+        <li>Tạo khoảng trống giữa các dòng để nhìn thoáng hơn.</li>
+        <li>Tạo ra một thẻ a (hyperlink)</li>
+        <li class="a">Khi rê chuột lên link thì đổi màu xanh #06F</li>
+        <li>Thay đổi màu chữ dòng số 4 thành ĐỎ</li>
+        <li>Thay đổi màu chữ dòng số đầu tiên thành BLUE</li>
+        <li>Thay đổi màu chữ dòng số cuối cùng thành ĐỎ</li>
+        <li>Thay đổi màu nền thành #f80 cho các dòng chẳn</li>
+    </ul>
+</body>
+</html>
