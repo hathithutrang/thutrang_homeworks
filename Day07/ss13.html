@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let dtb = 8
+
+        // if (dtb >=8 ) {
+        //     console.log('giỏi')
+            
+        // } else if( dtb >= 6 && dtb<8){
+        //     console.log('khá')
+        // }else if( dtb >= 4 && dtb<6){
+        //     console.log('tb')
+        // }
+        let amount = 500
+        let customerLevel = 'MEM'
+        let thanhvien = 'VIP'
+      
+        // // if (amount >= 500 && thanhvien === 'VIP') {
+        // //     console.log(10)
+            
+        // // }else{
+        // //     console.log(2)
+        // }
+        if (customerLevel == 'VIP') {
+            console.log('10')
+            
+        }else if( customerLevel == 'MEM' || customerLevel == 'GOLD'){
+            console.log('7')
+        }else {
+            console.log('2')
+        }
+        //  cú pháp khai báo mảng
+         let myArr= ['banana','orange','tomato']
+         let myArrComplex = ['banana', true, 17]
+         let emptyArr = [] /*chưa có phần tử nào = mảng rỗng*/
+        //  2. truy cập đến phần tử
+        // bắt đầu bằng số 0
+        console.log(myArr[1]);
+        // 3. làm sao biết mảng có bao nhiêu phần tử
+        console.log(myArr.length);
+        // 4. làm sao thêm 1 phần tử vào mảng
+        // c1
+        emptyArr[0] = 'toyota';
+        emptyArr[1] = 'honda';
+        console.log('<<=== 🚀 emptyArr ===>>',emptyArr);
+        // them vao mảng đã tồn tại
+        myArr[3] = 'lemon';
+        myArr.push('watermelon');
+        console.log('<<=== 🚀 myArr ===>>',myArr);
+        let newArr = myArr.concat();
+        console.log('<<=== 🚀 newArr ===>>',newArr);
+    </script>
+</body>
+</html>

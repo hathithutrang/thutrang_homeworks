@@ -1,0 +1,63 @@
+<script>
+    // doi tuong(object) == lab
+    // dac diem cua 1 lab
+
+    // 1. co Ban 
+    // 2. tivi
+    // 3. quat
+    // 4. hoc vien 
+
+    // khac nhau: gia tri cua thuoc tinh
+
+    // 1. cach = oop
+
+    let objectStudent = function (name, age, email, moblie, gender) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.moblie = moblie;
+        this.gender = gender;
+
+    }
+    let studentA = new objectStudent('trang', 21, 'thutrang@gmail.com', '0972146317', 'nu')
+    console.log('<<=== 🚀 studentA ===>>', studentA);
+    // ket luan: tat ca cac doi tuong deu tuan theo 1 quy chuan thong tin 
+
+    // cach2: 
+    //khai bao object tu do hon
+    let studentTrang = { name: 'trang', age: 21, email: 'thutrangv28@gmail.com' }
+    let studentPl = { name: 'pl', age: 21 }
+    console.log(studentTrang);
+
+    //truy cap den phan tu trong object
+    console.log(studentTrang.name);
+    console.log(studentTrang['age']);
+    let textEmail = 'email';
+    console.log(studentTrang[textEmail]);
+    // them 1 phan tu vao object
+    studentPl.email = 'pl@gmail.com';
+    //es6
+    //...studentPl: thua ke lai all cac thuoc tinh truoc do
+    studentPl = { ...studentPl, gender: 'female' }; //neu chua co thi them
+    // thay doi gia tri cua 1 phan tu
+    studentPl.age = 19
+    studentPl = { ...studentPl, name: 'Phuong Linh' };// neu co roi thi ghi def
+    console.log(studentPl);
+
+    // mot so phuong thuc xu ly voi chuoi
+    // trim, include, replace, upercase, lowercase,
+
+    //math object: https://www.w3schools.com/js/js_math.asp
+    //round
+    
+    // to mau cho js
+    tenbien.style.color = 'mau';
+    //fontsize
+    tenbien.style.fontSize = '20px';
+    //background
+    tenbien.style.backgroundColor = "";
+    // bai tap : set with html dom trong day 8 html css 
+
+
+
+</script>

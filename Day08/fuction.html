@@ -1,0 +1,97 @@
+<script>
+    // fuction là 1 tập hợp lệnh
+    // cú pháp tạo fuction
+
+    function tenFunction() {
+        // tap hop lenh dc thuc thi
+        // khi ham fuction dc goi
+
+        console.log('1');
+        console.log('2');
+
+    }
+    // cach goi ham 
+    tenFunction();
+    //3. cah dat ten function = dat ten bien = camel Case
+
+    //4. ham co tham so (parameter)
+    // @param name ==> dc goi la tham so
+    function helloName(name) {
+        console.log(`hello ${name}`);
+    }
+    // arrow function rut gon
+     let helloNameArr = (name) => console.log(`hello ${name}`);
+     helloNameArr('pl');
+    // truyen doi so vao ham
+    let myName = 'trang'
+
+    helloName('trang');// dua truc tiep
+    helloName(myName); // co the dua bien vao
+    helloName('tins'); 
+    // ham co nhiu tham so, moi tham so cach nhau bang dau ,
+    function helloNameV2(name,age) {
+        console.log(`toi la  ${name}, toi ${age} tuoi `);
+    }
+    helloNameV2('trang', 20);
+    // tham so vo han
+    function log(...arr){
+        console.log(arr);
+    }
+
+    log(2,3,4,5,6,7,8)
+
+    // ham co tra ve, voi cau lenh return
+
+    function sum(a,b) {
+        let sum = a + b;
+        //console.log('<<=== 🚀 sum  ===>>',sum );
+        return sum; //tra ve gia tri
+    }
+    
+     let result = sum(5,3);
+     console.log('<<=== 🚀 result ===>>',result);
+
+     let x = 4;
+     let y = 8;
+
+     console.log(x + y);
+
+     let a = 3;
+     let b = 7;
+
+     console.log(a + b);
+
+     let i = 3;
+     let j = 7;
+
+     console.log(i + j);
+
+     // cu phap truyen thosng
+    function total(e, f){
+        return e + f;
+    }
+    // es5, function ko ten
+
+    let totalEs5 = function (n,m){
+        return n + m;
+
+    }
+    //es6 : arrow function: cu phap dinh nghia ham moi short hand
+    // => : return
+    let totalArrowL= (e,f) => {
+        return e + f
+    };
+     let totalArrowS = (e,f) => e + f;
+      
+    let res =  totalArrowS(1,2)
+    console.log('<<=== 🚀 res  ===>>',res);
+
+
+
+
+
+
+
+
+
+</script>

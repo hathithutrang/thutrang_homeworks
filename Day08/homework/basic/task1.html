@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="amount">Số Lương:</label>
+    <input type="number" , name="amount" , id="amount", oninput="tinh()">
+    <label for="price">giá</label>
+    <input type="number" , name="price" , id="price", oninput="tinh()" >
+    <button onclick="add()">Tăng</button>
+    <button onclick="reduce()">Giam</button>
+    <button onclick="tinh()">tính</button>
+    <div id="result">thanh tien</div>
+    <script>
+
+        function tinh() {
+            let amount = parseInt(document.querySelector("input#amount").value);
+            let price = document.querySelector("input#price").value;
+            money = amount * price;
+            console.log(money);
+            document.querySelector("#result").innerText = money;
+        }
+        function add() {
+            let amount = parseInt(document.querySelector("input#amount").value);
+            let price = document.querySelector("input#price").value;
+            document.getElementById("amount").value = amount + 1;
+             money = amount * price;
+            console.log(money);
+            document.querySelector("#result").innerText = money;
+
+
+        }
+        function reduce() {
+            let amount = parseInt(document.querySelector("input#amount").value);
+            let price = document.querySelector("input#price").value;
+            if (amount > 1) {
+                document.getElementById("amount").value = amount - 1;
+
+            }
+             money = amount * price;
+            console.log(money);
+            document.querySelector("#result").innerText = money;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

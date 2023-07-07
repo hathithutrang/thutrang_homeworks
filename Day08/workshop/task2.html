@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Document</h1>
+    <input id="a" type="text" , name="a">
+    <input id="b" type="text" , name="b">
+    <select name="pheptinh" id="pheptinh">
+
+        <option value="add">Cộng</option>
+        <option value="minus">Trừ</option>
+        <option value="multi">Nhân</option>
+        <option value="div">Chia</option>
+
+
+    </select>
+    <button onclick="cal()">Tính Kết Quả</button>
+    <div id ="result"> Kết quả: </div>
+    <script>
+        function cal() {
+            console.log('tính');
+            let a = document.querySelector("input#a").value;
+            let b = document.querySelector("input#b").value;
+            let pheptinh = document.querySelector("#pheptinh").value;
+
+            console.log(a, b, pheptinh);
+            a = parseInt(a);
+            b = parseInt(b);
+            let result = 0;
+            if (pheptinh === 'add') {
+                result = a + b;
+
+            } else if (pheptinh === 'minus') {
+                result = a - b;
+
+            } else if (pheptinh === 'multi') {
+                result = a * b;
+            } else {
+                result = a / b
+            }
+            console.log(result);
+            
+
+            // document.querySelector("#result").innerText = result;
+            
+            // $("#result").text("Kết quả: " + result);
+        }
+        
+
+
+    </script>
+   
+</body>
+
+</html>
