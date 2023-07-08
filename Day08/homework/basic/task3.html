@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding-top: 30;
+            padding-bottom: 30px;
+        }
+
+        .child_two img {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="list">
+        <li class="child_one">Child 1</li>
+        <li class="child_two">
+            <img id="image"
+                src="https://lirp.cdn-website.com/c57d8c85/dms3rep/multi/opt/khai-niem-ve-javascript-1920w.jpeg"
+                alt="photo" />
+        </li>
+        <li class="child_three"><a href="link3">Child 3</a></li>
+    </ul>
+    <script>
+
+        // túm class child_one bằng thẻ classname
+        let c1 = document.getElementsByClassName('child_one');
+
+        console.log(c1);
+        // lấy thẻ img bằng id
+        let img = document.getElementById('image');
+
+        // lấy giá trị của src và alt
+        let src = img.src;
+        let alt = img.alt;
+        console.log("src:", src);
+        console.log("alt:", alt);
+
+
+        img.src = 'https://static.stringee.com/blog/images/javascript.png';
+        img.alt = 'hinh2';
+        let img1 = document.getElementById('image');
+
+
+        let src1 = img1.src;
+        let alt1 = img1.alt;
+
+        console.log("src:", src1);
+        console.log("alt:", alt1);
+    </script>
+</body>
+
+</html>
