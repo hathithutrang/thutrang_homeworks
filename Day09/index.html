@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-middle flex">
+                <div class="logo">
+                    Electric
+                </div>
+                <nav class="main-navigation actived">
+                    <ul class="flex">
+                        <li><a href="javascript:;"></a>home</li>
+                        <li><a href="javascript"></a>blog</li>
+                        <li><a href="javascript"></a>product</li>
+                        <li><a href="javascript"></a>contact</li>
+                    </ul>
+                    <span id="toogle-mobile">
+                       
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section section-one">
+            <div class="container">
+                <div class="our-services flex">
+                    <div class="thumb">
+                        thumb
+                    </div>
+                    <div class="content">
+                        content
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-two">
+            <div class="container">
+                <div class="product-list flex">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper flex">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        $("#toogle-mpbile").on("click", function(){
+            console.log('clicked');
+            $("header .main-navigation").toggle
+
+        });
+    </script>
+</body>
+</html>
